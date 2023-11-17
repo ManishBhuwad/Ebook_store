@@ -12,7 +12,7 @@ function OrderSection() {
         {
             prevOrders.length>0?prevOrders.map((item, index)=>(
                <OrderHistory key={index} props={item}/> 
-            )):<p>NO order history</p>
+            )):<p>No orders yet </p>
         }
     </div>
   )

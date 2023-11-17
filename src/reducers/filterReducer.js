@@ -1,9 +1,14 @@
+
+
 export const filterReducer = (state, action)=>{
     switch (action.type) {
         
         case "DATA_FROM_GLOBAL":
+            console.log("main",action.payload)
             return{
-                filterData:action.payload
+                filterData:action.payload,
+                allfilterData:action.payload
+                
             }
 
         case "GET_SORT_VALUE" :
@@ -52,6 +57,22 @@ export const filterReducer = (state, action)=>{
                 filterData : sortedData
             }
         
+        case "UPDATE_FILTERS_VALUE":
+            
+           const {name,value} = action.payload
+           console.log(name,"this is name")
+           console.log(value)
+
+            let tempFilter = state.allfilterData.filter((item)=>(
+                item.volumeInfo.title.toLowerCase().includes(value)
+            ))
+
+            return{
+                ...state,
+                filterData: tempFilter
+            }
+        
+
         default:
            return{
             state

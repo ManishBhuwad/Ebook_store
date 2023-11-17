@@ -25,7 +25,8 @@ const router = createBrowserRouter([
       },
       {
         path:"/single-page/:id",
-        element:<SinglePage/>
+        element:<SinglePage/>,
+        errorElement:<p>page not found please go back</p>
       },
       {
         path:"/cart/checkout/:id",

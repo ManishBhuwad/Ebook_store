@@ -39,28 +39,28 @@ function Chekout() {
       </div>
       <div className="w-full px-2 py-4">
         <form action="" onSubmit={handleOrders}>
-          <div className="flex gap-16">
-            <div className="w-6/12 flex flex-col gap-2">
+          <div className="flex flex-col gap-16 sm:flex-row ">
+            <div className=" w-full sm:w-6/12 flex flex-col gap-2">
               <div className="w-full py-2">
                 <h3 className="text-2xl">Billing Details</h3>
               </div>
-              <div className="w-full flex gap-10">
-                <div className="w-1/2 flex flex-col gap-1">
+              <div className="flex-col gap-2 sm:w-full flex sm:flex-row sm:gap-10">
+                <div className="w-full flex-col  sm:w-1/2 flex gap-1">
                   <label htmlFor="first_name">First Name</label>
                   <input
                     type="text"
                     name="first_name"
                     required
-                    className="h-12 border pl-2  focus:outline-gray-500 focus:outline-dotted "
+                    className="h-10 sm:h-12 border pl-2  focus:outline-gray-500 focus:outline-dotted "
                   />
                 </div>
-                <div className="w-1/2 flex flex-col gap-1">
+                <div className="w-full sm:w-1/2 flex flex-col gap-1">
                   <label htmlFor="first_name">First Name</label>
                   <input
                     type="text"
                     name="first_name"
                     required
-                    className="h-12 pl-2 border focus:outline-gray-500 focus:outline-dotted"
+                    className="h-10 sm:h-12 pl-2 border focus:outline-gray-500 focus:outline-dotted"
                   />
                 </div>
               </div>
@@ -70,7 +70,7 @@ function Chekout() {
                   type="text"
                   name="country"
                   required
-                  className="h-12 pl-2 border focus:outline-gray-500 focus:outline-dotted"
+                  className="h-10 sm:h-12 pl-2 border focus:outline-gray-500 focus:outline-dotted"
                 />
               </div>
               <div className="flex flex-col gap-1">
@@ -79,7 +79,7 @@ function Chekout() {
                   type="text"
                   name="country"
                   required
-                  className="h-12 pl-2 border focus:outline-gray-500 focus:outline-dotted"
+                  className="h-10 sm:h-12 pl-2 border focus:outline-gray-500 focus:outline-dotted"
                 />
               </div>
               <div className="flex flex-col gap-1">
@@ -89,7 +89,7 @@ function Chekout() {
                   name="town"
                   required
                   placeholder="Town/City"
-                  className="h-12 pl-2 border focus:outline-gray-500 focus:outline-dotted"
+                  className="h-10 sm:h-12 pl-2 border focus:outline-gray-500 focus:outline-dotted"
                 />
               </div>
               <div className="flex flex-col gap-1">
@@ -99,7 +99,7 @@ function Chekout() {
                   name="state"
                   required
                   placeholder="state"
-                  className="h-12 pl-2 border focus:outline-gray-500 focus:outline-dotted"
+                  className="h-10 sm:h-12 pl-2 border focus:outline-gray-500 focus:outline-dotted"
                 />
               </div>
               <div className="flex flex-col gap-1">
@@ -109,7 +109,7 @@ function Chekout() {
                   name="pincode"
                   required
                   placeholder="Pincode"
-                  className="h-12 pl-2 border focus:outline-gray-500 focus:outline-dotted"
+                  className="h-10 sm:h-12 pl-2 border focus:outline-gray-500 focus:outline-dotted"
                 />
               </div>
               <div className="flex flex-col gap-1">
@@ -119,7 +119,7 @@ function Chekout() {
                   name="phone"
                   required
                   placeholder=""
-                  className="h-12 pl-2 border focus:outline-gray-500 focus:outline-dotted"
+                  className="h-10 sm:h-12 pl-2 border focus:outline-gray-500 focus:outline-dotted"
                 />
               </div>
               <div className="flex flex-col gap-1">
@@ -129,12 +129,12 @@ function Chekout() {
                   name="email"
                   required
                   placeholder=""
-                  className="h-12 pl-2 border focus:outline-gray-500 focus:outline-dotted"
+                  className="h-10 sm:h-12 pl-2 border focus:outline-gray-500 focus:outline-dotted"
                 />
               </div>
             </div>
-            <div className="w-5/12  py-10">
-              <div className="h-96 border px-4">
+            <div className="w-full sm:w-5/12  py-10 ">
+              <div className="sm:h-96 border px-4 relative pb-5">
                 <h3 className="text-xl">Your order</h3>
                 <div className="my-2">
                   <h4 className="text-lg text-gray-600">Product</h4>
@@ -145,7 +145,7 @@ function Chekout() {
 
                 <button
                   type="submit"
-                  className="w-full p-2 text-blue-500 border border-blue-500 rounded-sm hover:bg-blue-500 hover:text-white"
+                  className="w-full mt-10  p-2 text-blue-500 border border-blue-500 rounded-sm hover:bg-blue-500 hover:text-white"
                 >
                   Place order
                 </button>
